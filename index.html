@@ -1,98 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot - Tutorías UV</title>
+    <title>Chatbot de Tutorías - Universidad Veracruzana</title>
     <style>
+        /* Estilo general */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f9;
             color: #333;
         }
+
+        /* Encabezado */
         header {
             background-color: #00549F;
             color: white;
             padding: 20px 0;
             text-align: center;
         }
+
         header img {
             width: 100px;
+            margin-bottom: 10px;
         }
+
+        header h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Contenedor principal */
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
             background: white;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
         }
-        h1, h2, h3 {
+
+        h2 {
             color: #00549F;
+            margin-top: 0;
+            font-size: 22px;
         }
+
         p {
-            line-height: 1.6;
-        }
-        .button-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .button-container a {
-            display: inline-block;
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
+            line-height: 1.8;
             font-size: 16px;
         }
-        .button-container a:hover {
-            background-color: #0056b3;
+
+        ul {
+            list-style: none;
+            padding: 0;
         }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #00549F;
+        }
+
+        /* Botón */
+        .btn {
+            display: inline-block;
+            background-color: #00549F;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #003d73;
+            transform: scale(1.05);
+        }
+
+        /* Pie de página */
         footer {
             text-align: center;
-            padding: 20px 0;
-            background-color: #f1f1f1;
-            color: #666;
+            padding: 15px;
+            background: #f4f4f9;
+            font-size: 14px;
+            margin-top: 30px;
+            color: #777;
         }
     </style>
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
-        <img src= "https://github.com/JorgeLp880/CHAT-BOT-GOYTI/blob/main/logo_uv.png" alt="Logo Universidad Veracruzana">
+        <img src="logo_uv.png" alt="Logotipo Universidad Veracruzana">
         <h1>Chatbot de Tutorías</h1>
     </header>
+
+    <!-- Contenido principal -->
     <div class="container">
-        <h2>¿Qué es este chatbot?</h2>
+        <h2>Acerca del Chatbot</h2>
         <p>
-            Este es un chatbot desarrollado para resolver dudas relacionadas con tutorías en la Universidad Veracruzana, específicamente en el Campus de Negocios y Tecnologías de la región Orizaba-Córdoba. 
+            Este chatbot ha sido diseñado para proporcionar información y resolver consultas relacionadas con los servicios de tutorías en la Universidad Veracruzana, específicamente para el Campus de Negocios y Tecnologías de la región Orizaba-Córdoba.
         </p>
         <p>
-            Nuestro chatbot utiliza inteligencia artificial basada en ChatGPT para proporcionar respuestas rápidas y precisas sobre los servicios de tutorías disponibles, procedimientos y más.
+            A través de la integración de inteligencia artificial basada en ChatGPT, este sistema ofrece respuestas rápidas, confiables y precisas sobre los procesos académicos, servicios disponibles y procedimientos relacionados con las tutorías.
         </p>
 
-        <h2>Proyecto Académico</h2>
+        <h2>Propósito Académico</h2>
         <p>
-            Este chatbot es parte del proyecto final de la Experiencia educativa *Innovación Tecnológica en las Organizaciones*.  
+            Este chatbot es el resultado de un proyecto académico desarrollado como parte de la experiencia educativa <strong>Innovación Tecnológica en las Organizaciones</strong>, cuyo objetivo principal es implementar soluciones tecnológicas aplicadas al ámbito académico.
         </p>
-        <h3>Autores</h3>
+
+        <h2>Equipo de Desarrollo</h2>
         <ul>
             <li>Jorge López Pérez</li>
-            <li>Rafael Espiritu Arias</li>
-            <li>Jose Luis Trujillo Duran</li>
+            <li>Rafael Espíritu Arias</li>
+            <li>José Luis Trujillo Durán</li>
         </ul>
 
-        <div class="button-container">
-         <a href="https://chatgpt.com/g/g-67396d53a3e88191bdac74aa5b178b28-universidad-veracruzana-tutorias" target="_blank">
-    Ir al Chatbot
-</a>
-        </div>
+        <!-- Botón -->
+        <a href="https://chatgpt.com/g/g-67396d53a3e88191bdac74aa5b178b28-universidad-veracruzana-tutorias" 
+           class="btn" target="_blank">Acceder al Chatbot</a>
     </div>
+
+    <!-- Pie de página -->
     <footer>
-        &copy; 2024 Universidad Veracruzana - Innovación Tecnológica en las Organizaciones
+        © 2024 Universidad Veracruzana - Innovación Tecnológica en las Organizaciones. Todos los derechos reservados.
     </footer>
 </body>
 </html>
