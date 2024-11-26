@@ -3,181 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot - Universidad Veracruzana</title>
+    <title>Chatbot - Tutorías UV</title>
     <style>
-        /* Paleta de colores y tipografía */
-        :root {
-            --azul: #18529D;
-            --verde: #28AD56;
-            --blanco: #FFFFFF;
-            --negro: #000000;
-        }
-
+        /* Estilo general */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--blanco);
-            color: var(--negro);
-            overflow-x: hidden;
+            background-color: #FFFFFF; /* Fondo blanco */
+            color: #000000; /* Texto negro */
         }
 
+        /* Encabezado */
         header {
-            background-color: var(--azul);
-            color: var(--blanco);
-            text-align: center;
+            background-color: #000000; /* Negro */
+            color: #FFFFFF; /* Texto blanco */
             padding: 30px 20px;
+            text-align: center;
             position: relative;
         }
 
         header img {
             width: 80px;
-            margin-bottom: 10px;
         }
 
         header h1 {
+            margin: 10px 0 0;
             font-size: 2rem;
-            margin: 0;
         }
 
-        /* Patrones Memphis */
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 150px;
-            height: 150px;
-            background-color: var(--verde);
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        header::after {
-            content: "";
-            position: absolute;
-            bottom: -20px;
-            right: -20px;
-            width: 100px;
-            height: 100px;
-            background-color: var(--blanco);
-            border: 4px solid var(--verde);
-            z-index: 1;
-            transform: rotate(45deg);
-        }
-
+        /* Contenedor principal */
         .container {
-            max-width: 900px;
-            margin: 40px auto;
+            max-width: 800px;
+            margin: 30px auto;
             padding: 20px;
-            background-color: var(--blanco);
+            background-color: #FFFFFF;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             position: relative;
-            overflow: hidden;
-        }
-
-        /* Añadimos patrones dentro del contenedor */
-        .container::before, .container::after {
-            content: '';
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            background: var(--verde);
-            border-radius: 50%;
-            z-index: 0;
-        }
-
-        .container::before {
-            top: -30px;
-            left: -30px;
-        }
-
-        .container::after {
-            bottom: -30px;
-            right: -30px;
         }
 
         .container h2 {
-            color: var(--azul);
+            color: #18529D; /* Azul oscuro */
         }
 
         .container p {
-            font-size: 1.1rem;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
-        .container a {
+        .btn {
             display: inline-block;
-            margin-top: 20px;
             padding: 12px 25px;
-            background-color: var(--verde);
-            color: var(--blanco);
+            background-color: #18529D; /* Azul oscuro */
+            color: #FFFFFF;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-            z-index: 1;
-            position: relative;
+            border-radius: 50px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
         }
 
-        .container a:hover {
-            background-color: var(--azul);
+        .btn:hover {
+            background-color: #28AD56; /* Verde */
         }
 
+        /* Footer */
         footer {
             text-align: center;
-            background-color: var(--negro);
-            color: var(--blanco);
-            padding: 15px 10px;
+            padding: 15px;
+            background-color: #000000; /* Negro */
+            color: #FFFFFF;
             font-size: 0.9rem;
         }
 
-        /* Agregamos más formas Memphis al fondo */
-        .background-pattern {
+        /* Figuras geométricas decorativas */
+        .shape {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             z-index: -1;
-            background: url('https://www.toptal.com/designers/subtlepatterns/uploads/dotted-pattern.png');
-            opacity: 0.3;
+        }
+
+        .circle {
+            width: 60px;
+            height: 60px;
+            background-color: #28AD56; /* Verde */
+            border-radius: 50%;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 60px solid #18529D; /* Azul oscuro */
+        }
+
+        /* Posiciones de las figuras */
+        .shape-1 {
+            top: 10%;
+            left: -5%;
+        }
+
+        .shape-2 {
+            bottom: 10%;
+            right: -5%;
+        }
+
+        .shape-3 {
+            top: 50%;
+            left: -7%;
+        }
+
+        .shape-4 {
+            bottom: 30%;
+            right: -7%;
         }
     </style>
 </head>
 <body>
+
     <header>
         <img src="images/image.png" alt="Logotipo Universidad Veracruzana">
-        <h1>Chatbot UV</h1>
+        <h1>Chatbot de Tutorías</h1>
     </header>
-    <div class="background-pattern"></div>
-    <div class="container">
-        <h2>¿Qué es este chatbot?</h2>
+
+    <main class="container">
+        <h2>Acerca del Chatbot</h2>
         <p>
-            Este chatbot está diseñado para resolver dudas relacionadas con tutorías en la 
-            <strong>Universidad Veracruzana</strong>, específicamente en el Campus de Negocios y Tecnologías 
-            de la región Orizaba-Córdoba.
+            Este chatbot ha sido diseñado para proporcionar información y resolver consultas relacionadas con los servicios 
+            de tutorías en la Universidad Veracruzana, específicamente para el Campus de Negocios y Tecnologías en la región Orizaba-Córdoba.
         </p>
         <p>
-            Utiliza inteligencia artificial basada en ChatGPT para proporcionar respuestas rápidas y precisas 
-            sobre los servicios de tutorías disponibles, procedimientos y más.
+            A través de la integración de inteligencia artificial basada en ChatGPT, este sistema ofrece respuestas confiables y precisas 
+            sobre los procesos académicos, servicios disponibles y procedimientos relacionados con las tutorías.
         </p>
-        <h2>Proyecto Académico</h2>
+        <h2>Propósito Académico</h2>
         <p>
-            Este chatbot es parte del proyecto final de la experiencia educativa 
-            <em>Innovación Tecnológica en las Organizaciones</em>.
+            Este chatbot es el resultado de un proyecto académico desarrollado como parte de la experiencia educativa 
+            <strong>Innovación Tecnológica en las Organizaciones</strong>, cuyo objetivo principal es implementar soluciones 
+            tecnológicas aplicadas al ámbito académico.
         </p>
-        <h2>Autores</h2>
+        <h2>Equipo de Desarrollo</h2>
         <ul>
             <li>Jorge López Pérez</li>
             <li>Rafael Espíritu Arias</li>
             <li>José Luis Trujillo Durán</li>
         </ul>
-        <a href="https://chatgpt.com/g/g-67396d53a3e88191bdac74aa5b178b28-universidad-veracruzana-tutorias" target="_blank">Ir al Chatbot</a>
-    </div>
+        <a href="#" class="btn">Acceder al Chatbot</a>
+    </main>
+
+    <!-- Figuras decorativas -->
+    <div class="shape circle shape-1"></div>
+    <div class="shape triangle shape-2"></div>
+    <div class="shape circle shape-3"></div>
+    <div class="shape triangle shape-4"></div>
+
     <footer>
         © 2024 Universidad Veracruzana - Innovación Tecnológica en las Organizaciones
     </footer>
+
 </body>
 </html>
