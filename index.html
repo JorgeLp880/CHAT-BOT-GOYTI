@@ -1,165 +1,456 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot - Tutorías UV</title>
-    <style>
-        /* Estilo general */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FFFFFF; /* Fondo blanco */
-            color: #000000; /* Texto negro */
-        }
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/ChatWithLuzio-Logo.png?raw=true" type="">
 
-        /* Encabezado */
-        header {
-            background-color: #000000; /* Negro */
-            color: #FFFFFF; /* Texto blanco */
-            padding: 30px 20px;
-            text-align: center;
-            position: relative;
-        }
+  <title> ChatWithLuzio </title>
 
-        header img {
-            width: 80px;
-        }
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-        header h1 {
-            margin: 10px 0 0;
-            font-size: 2rem;
-        }
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
-        /* Contenedor principal */
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #FFFFFF;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-        .container h2 {
-            color: #18529D; /* Azul oscuro */
-        }
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-        .container p {
-            line-height: 1.6;
-        }
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: #18529D; /* Azul oscuro */
-            color: #FFFFFF;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 50px;
-            margin-top: 15px;
-            transition: background-color 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #28AD56; /* Verde */
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #000000; /* Negro */
-            color: #FFFFFF;
-            font-size: 0.9rem;
-        }
-
-        /* Figuras geométricas decorativas */
-        .shape {
-            position: absolute;
-            z-index: -1;
-        }
-
-        .circle {
-            width: 60px;
-            height: 60px;
-            background-color: #28AD56; /* Verde */
-            border-radius: 50%;
-        }
-
-        .triangle {
-            width: 0;
-            height: 0;
-            border-left: 30px solid transparent;
-            border-right: 30px solid transparent;
-            border-bottom: 60px solid #18529D; /* Azul oscuro */
-        }
-
-        /* Posiciones de las figuras */
-        .shape-1 {
-            top: 10%;
-            left: -5%;
-        }
-
-        .shape-2 {
-            bottom: 10%;
-            right: -5%;
-        }
-
-        .shape-3 {
-            top: 50%;
-            left: -7%;
-        }
-
-        .shape-4 {
-            bottom: 30%;
-            right: -7%;
-        }
-    </style>
 </head>
+
 <body>
 
-    <header>
-        <img src="logo_uv.png" alt="Logotipo Universidad Veracruzana">
-        <h1>Chatbot de Tutorías</h1>
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              <b>ChatWithLuzio</b>
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"><b>INICIO</b> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quees.html"> ¿QUÉ ES?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="equipo.html">EQUIPO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="desarrollo_bot.html"><b>PROBAR PROTOTIPO</b></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      ¡CONOCE A <br>
+                      LUZIO!
+                    </h1>
+                    <p>
+                      Luzio es tu aliado para tomar decisiones profesionales. A través de una conversación interactiva, te ayudará a descubrir la carrera ideal según tus intereses, habilidades y metas.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/Apoyo-ChatWithLuzio.png?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      CHATEA DE <br>
+                      FORMA INTELIGENTE
+                    </h1>
+                    <p>
+                      Diseñado para ofrecerte recomendaciones personalizadas sobre tu futuro profesional dentro de la Universidad Veracruzana. A través de una conversación interactiva, Luzio analiza tus preferencias, gustos y perfil de egreso para ayudarte a elegir la carrera que mejor se adapta a ti.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/LuzioChatHeider.png?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      POTENCIADO <br>
+                      CON IA
+                    </h1>
+                    <p>
+                      Luzio utiliza la tecnología de ChatGPT para brindarte recomendaciones únicas y personalizadas. Conectado a la inteligencia artificial, el chatbot analiza tus gustos, intereses y antecedentes académicos para sugerirte las mejores opciones de carrera.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/LuzioChatHeider3.png?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
 
-    <main class="container">
-        <h2>Acerca del Chatbot</h2>
-        <p>
-            Este chatbot ha sido diseñado para proporcionar información y resolver consultas relacionadas con los servicios 
-            de tutorías en la Universidad Veracruzana, específicamente para el Campus de Negocios y Tecnologías en la región Orizaba-Córdoba.
-        </p>
-        <p>
-            A través de la integración de inteligencia artificial basada en ChatGPT, este sistema ofrece respuestas confiables y precisas 
-            sobre los procesos académicos, servicios disponibles y procedimientos relacionados con las tutorías.
-        </p>
-        <h2>Propósito Académico</h2>
-        <p>
-            Este chatbot es el resultado de un proyecto académico desarrollado como parte de la experiencia educativa 
-            <strong>Innovación Tecnológica en las Organizaciones</strong>, cuyo objetivo principal es implementar soluciones 
-            tecnológicas aplicadas al ámbito académico.
-        </p>
-        <h2>Equipo de Desarrollo</h2>
-        <ul>
-            <li>Jorge López Pérez</li>
-            <li>Rafael Espíritu Arias</li>
-            <li>José Luis Trujillo Durán</li>
-         </ul>
-        <a href="https://chatgpt.com/g/g-67396d53a3e88191bdac74aa5b178b28-universidad-veracruzana-tutorias" class="btn">Ir al Chatbot</a>
-    </main>
+    </section>
+    <!-- end slider section -->
+  </div>
 
-    <!-- Figuras decorativas -->
-    <div class="shape circle shape-1"></div>
-    <div class="shape triangle shape-2"></div>
-    <div class="shape circle shape-3"></div>
-    <div class="shape triangle shape-4"></div>
 
-    <footer>
-        © Jorge López Pérez  -  Rafael Espíritu Arias - José Luis Trujillo Durán
-    </footer>
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Principales <span>Características</span>
+          </h2>
+          <p>
+            Luzio puede ayudarte en la elección de una carrera profesional dentro de la Universidad Veracruzana considerando diferentes aspectos.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/Caracter%C3%ADsticas1.png?raw=true" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Perfil de Egreso
+                </h5>
+                <p>
+                  Saber en qué áreas te desempeñas mejor y cuáles son tus habilidades te ayudará a elegir la carrera que mejor se adapte a ti.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/Caracter%C3%ADsticas2.png?raw=true" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Ubicación Geográfica
+                </h5>
+                <p>
+                  Tu ubicación geográfica puede influir en la elección de tu carrera profesional. Luzio te ayudará a considerar esta variable.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/Caracter%C3%ADsticas3.png?raw=true" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Preferencias Profesionales
+                </h5>
+                <p>
+                  Los gustos y preferencias profesionales de egreso son importantes al elegir una carrera. Luzio te ayudará a considerarlas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href="quees.html">
+            VER MÁS
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="heading_container heading_center">
+        <h2>
+          Sobre <span>Nosotros</span>
+        </h2>
+        <p>
+          Innovar, ayudar y proporcionar una herramienta de apoyo para la elección de carrera profesional en la Universidad Veracruzana.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/AboutUS.png?raw=true" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              Motiva / Innova
+            </h3>
+            <p>
+              Somos un grupo de estudiantes de la Universidad Veracruzana, pertenecientes a la Facultad de Negocios y Tecnologías, específicamente de la carrera de Tecnologías de la Información en las Organizaciones. Nuestro objetivo es brindar una herramienta innovadora para ayudar a los aspirantes a la Universidad Veracruzana a tomar decisiones informadas sobre su futuro académico y profesional.
+            </p>
+            <p>
+              A través de LuzioChatBot, un chatbot potenciado por inteligencia artificial (IA), buscamos ofrecer un espacio de orientación que, basado en las preferencias, intereses y perfil académico de cada usuario, le brinde recomendaciones personalizadas sobre las carreras que ofrece la Universidad Veracruzana.
+            </p>
+            <a href="equipo.html">
+              ¡Conócenos!
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Ventajas<span> del Prototipo</span>
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/Ventajas1.png?raw=true" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Orientación Personalizada y Precisa
+            </h5>
+            <p>
+              LuzioChatBot utiliza inteligencia artificial para analizar el perfil académico, intereses, y expectativas laborales del usuario, brindando recomendaciones de carrera adaptadas a cada persona. Esto permite que los aspirantes reciban sugerencias específicas y relevantes, lo que facilita la elección de una carrera que realmente se ajuste a sus habilidades y metas profesionales.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/Ventajas2.png?raw=true" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Accesibilidad y Disponibilidad 24/7            </h5>
+            <p>
+              Al ser un chatbot basado en inteligencia artificial, LuzioChatBot está disponible en cualquier momento y desde cualquier lugar. Los aspirantes pueden interactuar con él en línea, sin importar la hora, lo que elimina las barreras de tiempo y lugar, y facilita el acceso a información útil en el momento en que lo necesiten, sin tener que esperar por asesoría presencial.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/Ventajas3.png?raw=true" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Optimización del Proceso de Toma de Decisiones
+            </h5>
+            <p>
+              Con su capacidad para analizar diversos factores, como el perfil de egreso de los aspirantes, sus intereses y la oferta académica de la Universidad Veracruzana, LuzioChatBot ayuda a los usuarios a tomar decisiones más informadas y fundamentadas, reduciendo la incertidumbre y el estrés que a menudo acompaña la elección de una carrera universitaria.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/Ventajas4.png?raw=true" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Ahorro de Tiempo y Recursos para la Universidad y los Aspirantes            </h5>
+            <p>
+              Al automatizar el proceso de orientación vocacional, LuzioChatBot no solo ofrece a los aspirantes respuestas inmediatas, sino que también optimiza el tiempo de los asesores académicos, permitiéndoles concentrarse en casos más complejos. Además, reduce la necesidad de consultas presenciales o llamadas telefónicas, lo que hace más eficiente el proceso de orientación para todos los involucrados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Dirección
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Orizaba, Veracruz, México.
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Tel +52 272 703 4463
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  chatwithluzio.sug@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Información
+            </h4>
+            <p>
+              Este proyecto es un prototipo en desarrollo, los integrantes del equipo no son responsables de fallas en el sistema ni del mal uso del mismo.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Navegación
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                Inicio
+              </a>
+              <a class="" href="quees.html">
+                ¿Qué es?
+              </a>
+              <a class="" href="equipo.html">
+                Equipo
+              </a>
+              <a class="" href="contacto.html">
+                Contacto
+              </a>
+              <a class="" href="/chatwithluzio/PruebaVista/indexchatbot.html">
+                PROBAR PROTOTIPO
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> Todos los derechos reservados por
+        <a href="https://emmanuel-rh.github.io/chatwithluzio/index.html">ChatWithLuzio</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
 
 </body>
+
 </html>
