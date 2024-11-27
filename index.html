@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUTOR-IA </title>
-<link
+    <title>Chatbot - Tutorías UV</title>
+    <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
@@ -14,81 +14,110 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FFFFFF; /* Fondo blanco */
-            color: #000000; /* Texto negro */
+            background-color: #f7f9fc; /* Azul claro suave */
+            color: #333333; /* Texto gris oscuro */
         }
 
         /* Encabezado */
         header {
-            background-color: #000000; /* Negro */
-            color: #FFFFFF; /* Texto blanco */
-            padding: 30px 20px;
+            background: linear-gradient(45deg, #18529D, #28AD56); /* Gradiente azul a verde */
+            color: #33ffff; /* Texto blanco */
+            padding: 20px;
             text-align: center;
             position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header img {
-            width: 80px;
+            width: 100px;
+            margin-bottom: 10px;
         }
 
         header h1 {
-            margin: 10px 0 0;
-            font-size: 2rem;
+            margin: 5px 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 300;
         }
 
         /* Contenedor principal */
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 30px auto;
             padding: 20px;
-            background-color: #FFFFFF;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: relative;
+            background-color: #FFFFFF; /* Fondo blanco */
+            border-radius: 15px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
         }
 
         .container h2 {
             color: #18529D; /* Azul oscuro */
+            margin-bottom: 15px;
         }
 
         .container p {
-            line-height: 1.6;
+            line-height: 1.8;
+        }
+
+        .container img {
+            display: block;
+            max-width: 100%;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .btn {
             display: inline-block;
-            padding: 12px 25px;
-            background-color: #18529D; /* Azul oscuro */
+            padding: 12px 30px;
+            background-color: #28AD56; /* Verde */
             color: #FFFFFF;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 50px;
-            margin-top: 15px;
-            transition: background-color 0.3s;
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: transform 0.3s, background-color 0.3s;
         }
 
         .btn:hover {
-            background-color: #28AD56; /* Verde */
+            background-color: #18529D; /* Azul oscuro */
+            transform: scale(1.05);
         }
 
         /* Footer */
         footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #000000; /* Negro */
+            background: #18529D; /* Azul oscuro */
             color: #FFFFFF;
-            font-size: 0.9rem;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            position: relative;
         }
 
-        /* Figuras geométricas decorativas */
+        footer span {
+            color: #28AD56; /* Verde */
+            font-weight: bold;
+        }
+
+        footer a {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        /* Figuras decorativas */
         .shape {
             position: absolute;
             z-index: -1;
         }
 
         .circle {
-            width: 60px;
-            height: 60px;
+            width: 100px;
+            height: 100px;
             background-color: #28AD56; /* Verde */
             border-radius: 50%;
         }
@@ -96,20 +125,20 @@
         .triangle {
             width: 0;
             height: 0;
-            border-left: 30px solid transparent;
-            border-right: 30px solid transparent;
-            border-bottom: 60px solid #18529D; /* Azul oscuro */
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #18529D; /* Azul oscuro */
         }
 
         /* Posiciones de las figuras */
         .shape-1 {
-            top: 10%;
+            top: 5%;
             left: -5%;
         }
 
         .shape-2 {
-            bottom: 10%;
-            right: -5%;
+            bottom: 15%;
+            right: -10%;
         }
 
         .shape-3 {
@@ -118,7 +147,7 @@
         }
 
         .shape-4 {
-            bottom: 30%;
+            bottom: 35%;
             right: -7%;
         }
     </style>
@@ -128,30 +157,28 @@
     <header>
         <img src="logo_uv.png" alt="Logotipo Universidad Veracruzana">
         <h1 class="animate__animated animate__bounce">TUTOR-IA</h1>
+        <p>Universidad Veracruzana - Campus Orizaba-Córdoba</p>
     </header>
 
     <main class="container">
         <h2>Acerca del Chatbot</h2>
+        <img src="placeholder.jpg" alt="Descripción del chatbot">
         <p>
             Este chatbot ha sido diseñado para proporcionar información y resolver consultas relacionadas con los servicios 
-            de tutorías en la Universidad Veracruzana, específicamente para el Campus de Negocios y Tecnologías en la región Orizaba-Córdoba.
-        </p>
-        <p>
-            A través de la integración de inteligencia artificial basada en ChatGPT, este sistema ofrece respuestas confiables y precisas 
-            sobre los procesos académicos, servicios disponibles y procedimientos relacionados con las tutorías.
+            de tutorías en la Universidad Veracruzana. Ideal para apoyar a estudiantes con información rápida y precisa.
         </p>
         <h2>Propósito Académico</h2>
+        <img src="placeholder2.jpg" alt="Imagen del propósito académico">
         <p>
-            Este chatbot es el resultado de un proyecto académico desarrollado como parte de la experiencia educativa 
-            <strong>Innovación Tecnológica en las Organizaciones</strong>, cuyo objetivo principal es implementar soluciones 
-            tecnológicas aplicadas al ámbito académico.
+            Este proyecto es parte de la experiencia educativa <strong>Innovación Tecnológica en las Organizaciones</strong>, 
+            cuyo objetivo es implementar soluciones tecnológicas aplicadas al ámbito académico.
         </p>
         <h2>Equipo de Desarrollo</h2>
         <ul>
             <li>Jorge López Pérez</li>
             <li>Rafael Espíritu Arias</li>
             <li>José Luis Trujillo Durán</li>
-         </ul>
+        </ul>
         <a href="https://chatgpt.com/g/g-67396d53a3e88191bdac74aa5b178b28-universidad-veracruzana-tutorias" class="btn">Ir al Chatbot</a>
     </main>
 
@@ -162,7 +189,7 @@
     <div class="shape triangle shape-4"></div>
 
     <footer>
-        © Jorge López Pérez  -  Rafael Espíritu Arias - José Luis Trujillo Durán
+        <p>© <span>2024</span> | Desarrollado por <a href="#">Jorge López</a>, <a href="#">Rafael Espíritu</a>, y <a href="#">José Luis Trujillo</a>.</p>
     </footer>
 
 </body>
